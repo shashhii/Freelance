@@ -7,6 +7,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useRef } from "react";
 import { BadgeCheck } from "lucide-react";
 import Image from "next/image";
+import { SafetyIcon } from "./icons/IndustryIcons";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -17,7 +18,7 @@ export function WettSection() {
     gsap.from(".wett-content > *", {
       scrollTrigger: {
         trigger: container.current,
-        start: "top 70%",
+        start: "top 80%",
       },
       x: -50,
       opacity: 0,
@@ -29,11 +30,11 @@ export function WettSection() {
     gsap.from(".wett-image", {
       scrollTrigger: {
         trigger: container.current,
-        start: "top 70%",
+        start: "top 80%",
       },
       scale: 1.1,
       opacity: 0,
-      duration: 1.5,
+      duration: 1.2,
       ease: "power2.out"
     });
   }, { scope: container });
@@ -44,7 +45,7 @@ export function WettSection() {
         <div className="grid lg:grid-cols-2 gap-16 items-center">
           <div className="wett-content space-y-6">
             <div className="inline-flex items-center gap-2 bg-primary/10 text-primary px-4 py-2 rounded-full font-bold text-sm">
-              <BadgeCheck className="h-4 w-4" /> WETT Certified Professionals
+              <SafetyIcon className="h-4 w-4" /> WETT Certified Professionals
             </div>
             <h3 className="text-3xl md:text-5xl font-bold leading-tight">
               Safety First with Site Comprehensive WETT Inspections
@@ -73,7 +74,7 @@ export function WettSection() {
           <div className="relative">
             <div className="wett-image aspect-[4/5] rounded-3xl overflow-hidden shadow-2xl relative">
               <Image 
-                src="https://images.unsplash.com/photo-1621905238294-48416ec8524e?q=80&w=2070&auto=format&fit=crop" 
+                src="/images/wett.png" 
                 alt="WETT Inspection" 
                 fill
                 className="object-cover"
@@ -81,7 +82,7 @@ export function WettSection() {
               />
             </div>
             <div className="absolute -bottom-6 -right-6 bg-primary p-8 rounded-2xl hidden md:block z-10">
-              <p className="text-white font-bold text-2xl">WETT CERTIFIED</p>
+              <p className="text-white font-bold text-2xl uppercase">Wett Certified</p>
               <p className="text-white/80">Site Comprehensive</p>
             </div>
           </div>

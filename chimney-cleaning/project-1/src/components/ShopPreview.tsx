@@ -7,13 +7,14 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useRef } from "react";
 import { ShoppingBag, ChevronRight } from "lucide-react";
 import Image from "next/image";
+import { FireplaceIcon } from "./icons/IndustryIcons";
 
 gsap.registerPlugin(ScrollTrigger);
 
 const products = [
-  { name: "Wood Stoves", img: "https://images.unsplash.com/photo-1545229202-0da6324083a3?q=80&w=2070&auto=format&fit=crop" },
-  { name: "Fireplace Inserts", img: "https://images.unsplash.com/photo-1520699049698-acd2fccb8cc8?q=80&w=2070&auto=format&fit=crop" },
-  { name: "Pellet Stoves", img: "https://images.unsplash.com/photo-1516937941344-00b4e0337589?q=80&w=2070&auto=format&fit=crop" }
+  { name: "Wood Stoves", img: "/images/stoves.png" },
+  { name: "Fireplace Inserts", img: "/images/inserts.png" },
+  { name: "Pellet Stoves", img: "/images/pellet.png" }
 ];
 
 export function ShopPreview() {
