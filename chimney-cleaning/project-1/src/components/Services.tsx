@@ -6,6 +6,7 @@ import gsap from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useRef } from "react";
 import { ShieldCheck, Wrench, Search, FlameKindling, Wind, Droplets } from "lucide-react";
+import { BroomIcon, InspectionIcon, RepairIcon, FireplaceIcon, SafetyIcon } from "./icons/IndustryIcons";
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -15,25 +16,25 @@ const services = [
   {
     title: "Chimney Cleaning",
     description: "Professional sweeps for fireplaces, wood stoves, and oil furnaces to ensure maximum safety.",
-    icon: Wind,
+    icon: BroomIcon,
     href: "/sweeps"
   },
   {
     title: "WETT Inspections",
     description: "WETT Certified Site Comprehensive inspections for insurance and peace of mind.",
-    icon: ShieldCheck,
+    icon: InspectionIcon,
     href: "/inspections"
   },
   {
     title: "Masonry Repairs",
     description: "Expert mortar joint repair, chimney restoration, and specialized masonry work.",
-    icon: Search,
+    icon: RepairIcon,
     href: "/repairs"
   },
   {
     title: "Wood Stove Installs",
     description: "Safe and compliant installation of wood burning stoves and fireplace inserts.",
-    icon: FlameKindling,
+    icon: FireplaceIcon,
     href: "/installs"
   },
   {
@@ -45,7 +46,7 @@ const services = [
   {
     title: "Dryer Vent Cleaning",
     description: "Reducing fire hazards with professional lint removal and vent maintenance.",
-    icon: Wind,
+    icon: BroomIcon,
     href: "/sweeps"
   }
 ];

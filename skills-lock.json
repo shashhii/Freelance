@@ -19,6 +19,12 @@
       "skillPath": "skills/azure-ai/SKILL.md",
       "computedHash": "09d7b1f982b731532ffaef107f3cd9a922464ca8812093f454852a7668cfcfd6"
     },
+    "better-icons": {
+      "source": "better-auth/better-icons",
+      "sourceType": "github",
+      "skillPath": "skills/SKILL.md",
+      "computedHash": "b16a2f5830f3db40695fdd58d415a631e9fb6170a0cc5d3b56469d17e53596bc"
+    },
     "find-skills": {
       "source": "vercel-labs/skills",
       "sourceType": "github",

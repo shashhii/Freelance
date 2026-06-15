@@ -29,7 +29,7 @@ export function Hero() {
   return (
     <section 
       ref={container}
-      className="relative h-screen flex items-center justify-center overflow-hidden bg-[url('https://images.unsplash.com/photo-1542013936693-884638332954?q=80&w=2070&auto=format&fit=crop')] bg-cover bg-center"
+      className="relative h-screen flex items-center justify-center overflow-hidden bg-[url('/images/hero.png')] bg-cover bg-center"
     >
       <div className="absolute inset-0 bg-black/60" />
       
